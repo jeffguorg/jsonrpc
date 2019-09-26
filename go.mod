@@ -1,1 +1,3 @@
-module "github.com/jeffguorg/jsonrpc"
+module github.com/jeffguorg/jsonrpc
+
+go 1.12
