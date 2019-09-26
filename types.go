@@ -10,7 +10,7 @@ type Request struct {
 	Version    string      `json:"jsonrpc"`
 	Method     string      `json:"method"`
 	ID         interface{} `json:"id"`
-	Parameters interface{} `json:"params,omitempty"`
+	Parameters []interface{} `json:"params,omitempty"`
 }
 
 type Response struct {
