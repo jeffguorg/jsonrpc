@@ -1,4 +1,4 @@
-package v2
+package jsonrpc
 
 type Error struct {
 	Code    string      `json:"code"`
@@ -7,8 +7,8 @@ type Error struct {
 }
 
 type Request struct {
-	Version    string `json:"jsonrpc"`
-	Method     string `json:"method"`
+	Version    string      `json:"jsonrpc"`
+	Method     string      `json:"method"`
 	ID         interface{} `json:"id"`
 	Parameters interface{} `json:"params,omitempty"`
 }
